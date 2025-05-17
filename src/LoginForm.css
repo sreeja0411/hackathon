@@ -1,0 +1,90 @@
+/* Base styles for login-box */
+.login-box {
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Light theme (default) */
+.login-box.light {
+  background-color: white;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-box.light input {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.login-box.light input::placeholder {
+  color: #666;
+}
+
+.login-box.light button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.login-box.light .link-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Dark theme */
+.login-box.dark {
+  background-color: #252525;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.login-box.dark input {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.login-box.dark input::placeholder {
+  color: #aaa;
+}
+
+.login-box.dark button {
+  background-color: #0056b3; /* Slightly darker blue for dark theme */
+  color: #e0e0e0;
+  border: none;
+}
+
+.login-box.dark .link-btn {
+  background: none;
+  border: none;
+  color: #4dabf7; /* Lighter blue for contrast in dark theme */
+  cursor: pointer;
+}
+
+/* General styles */
+.login-box input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.login-box button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.login-box .link-btn:hover {
+  text-decoration: underline;
+}
