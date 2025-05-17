@@ -1,0 +1,75 @@
+/* Base styles */
+.feedback-box {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light theme (default) */
+.feedback-box.light {
+  --bg-card: #fff;
+  --text-main: #333;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+
+.feedback-box.light .feedback-textarea {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.feedback-box.light .feedback-textarea::placeholder {
+  color: #666;
+}
+
+.feedback-box.light .send-button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Dark theme */
+.feedback-box.dark {
+  --bg-card: #252525;
+  --text-main: #e0e0e0;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+
+.feedback-box.dark .feedback-textarea {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.feedback-box.dark .feedback-textarea::placeholder {
+  color: #aaa;
+}
+
+.feedback-box.dark .send-button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* General styles */
+.feedback-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* Matches hover color from Home.css */
+}
