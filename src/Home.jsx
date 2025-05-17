@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Home.css";
 import AuthPage from "./AuthPage";
 import FeedbackForm from "./FeedbackForm";
-
+import LibraryPage from "./LibraryPage";
 function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [activePage, setActivePage] = useState("home");
@@ -17,7 +17,7 @@ function Home() {
         <h2 className="logo">💬 LegalGPT</h2>
         <nav className="nav-links">
           <a href="#" onClick={() => setActivePage("home")}>Home</a>
-          <a href="#" onClick={() => setActivePage("messages")}>Messages</a>
+          <a href="#" onClick={() => setActivePage("messages")}>Libraries</a>
           <a href="#" onClick={() => setActivePage("profile")}>Profile</a>
           <a href="#" onClick={() => setActivePage("settings")}>Settings</a>
         </nav>
@@ -54,7 +54,9 @@ function Home() {
         ) : activePage === "login" ? (
           <AuthPage theme={theme} />
         ) : activePage === "profile" ? (
-          <FeedbackForm theme={theme} /> // Pass the theme prop
+          <FeedbackForm theme={theme} />
+        ) : activePage === "messages" ? (
+        <LibraryPage theme={theme} />
         ) : null}
       </main>
     </div>
