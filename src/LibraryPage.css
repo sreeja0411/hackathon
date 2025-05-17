@@ -1,0 +1,90 @@
+.library-container {
+    padding: 20px;
+    height: 100vh; /* Instead of min-height */
+    overflow: auto;
+  }
+  
+  
+  .library-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 60px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .law-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .law-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  .law-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .law-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 8px;
+  }
+  
+  .highlight {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .law-description {
+    font-size: 14px;
+    color: #555;
+    line-height:1.6;
+}
+.library-container.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .library-container.dark .library-title,
+  .library-container.dark .section-title,
+  .library-container.dark .highlight,
+  .library-container.dark .law-description {
+    color: #e0e0e0; /* light gray or white */
+  }
+  
+  .library-container.dark .law-card {
+    background-color: #1e1e1e;
+    border-color: #333;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  }
+  
+  .library-container.dark .law-title {
+    color: #90caf9; /* soft blue for dark mode */
+  }
+  
