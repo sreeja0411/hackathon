@@ -3,6 +3,7 @@ import "./Home.css";
 import AuthPage from "./AuthPage";
 import FeedbackForm from "./FeedbackForm";
 import LibraryPage from "./LibraryPage";
+import ContactLawyerPage from "./ContactLawyerPage";
 function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [activePage, setActivePage] = useState("home");
@@ -18,6 +19,7 @@ function Home() {
         <nav className="nav-links">
           <a href="#" onClick={() => setActivePage("home")}>Home</a>
           <a href="#" onClick={() => setActivePage("messages")}>Libraries</a>
+          <a href="#" onClick={() => setActivePage("contact")}>Contact Lawyer</a>
           <a href="#" onClick={() => setActivePage("profile")}>Profile</a>
           <a href="#" onClick={() => setActivePage("settings")}>Settings</a>
         </nav>
@@ -57,6 +59,8 @@ function Home() {
           <FeedbackForm theme={theme} />
         ) : activePage === "messages" ? (
         <LibraryPage theme={theme} />
+        ) : activePage === "contact" ? (
+        <ContactLawyerPage />
         ) : null}
       </main>
     </div>

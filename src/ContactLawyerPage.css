@@ -1,0 +1,67 @@
+.contact-lawyer-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.lawyer-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.lawyer-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.lawyer-specialty {
+  color: var(--subtext);
+  margin-bottom: 1.5rem;
+}
+
+.contact-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-options {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-options a {
+  color: #007bff;
+  text-decoration: none;
+}
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f9f9f9;
+  --subtext: #666666;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --card-bg: #1e1e1e;
+  --subtext: #aaaaaa;
+}
